@@ -1,0 +1,582 @@
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body{
+      font-size: 16px;
+      letter-spacing: 0.5px;
+    }
+
+    /***********************************************************
+            background Image for top section and Navigation
+    ***********************************************************/
+    .bg{
+      background-image: url(bg-tablet-pattern.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: fixed;
+      height: 100%;
+    }
+
+    .navigation{
+      display: flex;
+      width: 80%;
+      margin: auto;
+      justify-content: space-between;
+      align-items: center;
+      height: 20vh;
+    }
+
+    /******************
+        Nav-Links CSS
+      *****************/
+
+    li{
+      list-style: none;
+      text-decoration: none;
+      margin-left: 20px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    ul li{
+      color: hsl(228, 39%, 23%);
+    }
+
+    ul li:hover{
+      color: #7f8b92;
+    }
+
+    li:hover{
+      color: hsl(12, 88%, 59%);
+    }
+
+    ul{
+      display: flex;
+    }
+
+ .close{
+   display: none;
+ }
+
+ /*****************************
+      Hamburger Container CSS
+  *****************************/
+
+ .menuIcon{
+     display: none;
+     cursor: pointer;
+     z-index: 10000;
+ }
+
+ /* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1000; 
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0);
+  background-color:  rgba(0,0,0,0.3); 
+  transition: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.modal-content li{
+  margin: 20px auto;
+}
+
+/* The Close Button */
+.close {
+  z-index: 10000;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/******************************************
+        Main Section CSS begins here
+ *****************************************/
+    .top-section{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 80%;
+      margin: auto;
+      padding-top: 50px;
+    }
+
+    .top-header{
+      width: 65%;
+      align-items: center;
+      padding-top: 40px;
+    }
+
+    h1{
+      font-size: 40px;
+      font-weight: 700;
+      color: hsl(228, 39%, 23%);
+    }
+
+    /***********************
+        Pink Button CSS
+    ***********************/
+    .get-started{
+      min-width: 135px;     
+      line-height: 40px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      border: 0;
+      padding: 0px;     
+      border-radius: 100px; 
+      text-align: center;
+      background-color:  hsl(12, 88%, 59%);
+      color: white;
+      cursor: pointer;
+    }
+
+    .get-started:hover{
+      outline: none;
+      box-shadow: -1px -1px 15px -3px hsl(12, 61%, 69%);
+      font-weight: 400;
+      transition: all ease 0.3s;
+    }
+
+    /**************************
+        White Button CSS
+    ***************************/
+
+    .get-started-white{
+      min-width: 135px;     
+      line-height: 40px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      border: 0;
+      padding: 0px;     
+      border-radius: 100px; 
+      text-align: center;
+      background-color: hsl(0, 0%, 98%);
+      color:hsl(12, 88%, 59%);
+      cursor: pointer;
+    }
+
+    .get-started-white:hover{
+      outline: none;
+      box-shadow: -1px -1px 15px -3px hsl(0, 0%, 98%);
+      font-weight: 400;
+      transition: all ease 0.3s;
+    }
+
+    .top-text{
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: #7f8b92;
+    }
+
+    .second-section-image{
+      background-image: url(bg-tablet-pattern2.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: fixed;
+      height: 100%;
+    }
+
+    .second-section{
+      width: 80%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .second-header h2, h2, h3, h4{
+      color: hsl(228, 39%, 23%);
+      font-weight: 700;
+    }
+
+    .second-header div{
+      width: 55%;
+      color: #7f8b92;
+    }
+
+    h2{
+      font-size: 30px;
+      width: 65%;
+      padding-bottom: 20px;
+    }
+
+    .section-two, .section-one, .section-three{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+    }
+
+    .content-header{
+      display: flex;
+    }
+
+    .content-header h4{
+      margin-top: 5px;
+      margin-left: 15px;
+    }
+
+    .content{
+      margin-left: 65px;
+    }
+
+    .content div{
+      margin-top: 20px;
+      color: #7f8b92;
+    }
+
+    .number{
+      width: 50px;
+      background-color: hsl(12, 88%, 59%);
+      height: 27px;
+      padding: 5px 5px 5px 16px;
+      border-radius: 100px;
+      z-index: 1;
+    }
+
+    /*************************
+            Slider CSS 
+    **************************/
+        .post-slider .post-wrapper{
+            margin: 0px auto;
+            overflow: hidden;
+        }
+
+        .post-slider .post-wrapper .post{
+            background: #f1f1f1;
+            display: inline-block;
+            width: 300px;
+            margin: 50px 10px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .post-content h3{
+          margin-bottom: 20px;
+          margin-top: -20px;
+        }
+
+        .post-content p{
+          color: #7f8b92;
+        }
+
+        .post-slider h2{
+          text-align: center;
+          margin: 25px auto;
+        }
+
+        .post .post-image{
+          width: 100px;
+          height: 100px;
+          border: 50%;
+          position: relative;
+          bottom: 50px;
+          left: -50%;
+          transform: translateX(-70px);
+        }
+
+        .post .post-image img{
+          width: 100px;
+          height: 100px;
+        }
+
+        .slider-btn{
+          text-align: center;
+        }
+
+        /*************************
+          Simplify CSS section 
+        *************************/
+
+        .simplify{
+          background-image: url(bg-simplify-section-desktop2.svg);
+          background-color: hsl(12, 88%, 59%);
+          height: 25vh;
+          margin-top: 35px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          max-height: 100%;
+        }
+
+        .simplify-container{
+          width: 80%;
+          margin: auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .simplify-text{
+          width: 60vh;
+          font-size: 36px;
+          color: white;
+        }
+
+        /******************
+            Footer CSS
+          ****************/
+        footer{
+          height: 30vh;
+          background-color: hsl(233, 12%, 13%);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .footer-container{
+          width: 80%;
+          margin:auto;
+          display: flex;
+          justify-content: space-between;
+          color: white;
+        }
+
+        .first-grid{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        .footer-nav{
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+         grid-gap: 120px;
+        }
+
+        #email{
+          padding: 10px;
+          border-radius: 100px;
+         
+        }
+
+        small{
+            margin-left: 15px;
+        }
+
+        .submit{
+          padding: 10px;
+          border-radius: 100px;
+          width:60px;
+          background-color: hsl(12, 88%, 59%);
+          color: white;
+          outline: none;
+          cursor: pointer;
+        }     
+
+        .submit:hover{
+          outline: none;
+          box-shadow: -1px -1px 15px -3px hsl(12, 88%, 59%);
+          background-color: #d68c77;
+          color: white;
+          font-weight: 400;
+          transition: all ease 0.3s;
+        } 
+
+        .third-grid li, .second-grid li{
+          margin: 10px;
+        }
+
+        .footer-social-links{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .footer-social-links a{
+          color: white;
+          font-size: 22px;
+        }
+
+        .footer-social-links a:hover{
+          color: hsl(12, 88%, 59%);;
+        }
+
+        ::-webkit-input-placeholder{
+          color: hsl(12, 88%, 59%);
+        }
+
+        /*************************************************
+            Mobile Device CSS with Maximum Width of 375px
+          ************************************************/
+
+    @media(max-width: 375px){
+        .bg{
+            background-image: url(bg-tablet-pattern-mobile.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: fixed;
+            height: 100%;
+          }
+
+        .menuIcon{
+            display: block;
+            cursor: pointer;
+        } 
+
+        .nav-links{
+            display: none;
+        }
+
+        .nav-btn{
+            display: none;
+        }
+
+        .top-section{
+            display: flex;
+            flex-direction: column-reverse;  
+            padding-top: 0px;
+        }
+
+        .top-header{
+            width: 100%;
+            margin: auto;         
+        }
+
+        .top-header .top-text{
+            text-align: center;
+        }
+
+        .top-header .get-btn{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 40px;
+        }
+
+        .second-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .second-header{
+            width: 100%;
+            margin: 30px auto;
+        }
+
+        .second-header div{
+            width: 100%;
+            margin: auto;
+        }
+
+        h2{
+            width: 100%;
+            margin: auto; 
+        }
+
+        .section-two, .section-one, .section-three{
+            display: flex;
+            margin: 30px auto;
+          }
+
+          .content-header{
+            background-color: #FFF0EC;
+            width: 112%;  
+          }
+
+          .content{
+            margin-left: 0px;
+            text-align: left;
+          }
+
+          .num-bg{
+            background-color: #FFF0EC;
+            width: 112%;
+           
+          }
+
+        .simplify-container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 59px auto;
+        }
+
+        .simplify{
+            height: 100%;
+        }
+
+        .simplify-text{
+            width: 100%;
+            margin: 25px auto;
+        }
+
+        footer{
+            height: 100%;
+        }
+
+        .footer-nav{
+         grid-gap: 0px;
+        }
+
+
+        .footer-container{
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 30px auto;
+        }
+
+        .first-grid{
+          text-align: center;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+
+        .first-grid, .footer-nav, .fourth-grid, .footer-social-links{
+          width: 100%;
+          margin: auto;
+          margin: 12px auto;
+        }
+
+        .footer-social-links a{
+          font-size: 29px;
+        }
+
+
+        .footer-social-links{
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .footer-logo{
+          margin: 20px auto;
+        }
+
+        small{
+          display: none;
+        }
+    }
