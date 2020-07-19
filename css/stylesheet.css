@@ -500,6 +500,7 @@
 
           .section-three h4 {
             margin-left: -7px;
+            Text-wrap: no-wrap;
           }
 
           .content-header{
